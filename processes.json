@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "ci-cd",
+      "script": "./app.js",
+      "merge_logs": true,
+      "max_restarts": 5,
+      "instances": 4,
+      "max_memory_restart": "200M",
+      "env": {
+        "PORT": 3000,
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

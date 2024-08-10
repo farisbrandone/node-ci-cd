@@ -1,0 +1,23 @@
+{
+  "name": "ci-cd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pm2": "pm2 start processes.json --no-daemon",
+    "start": "node app.js",
+    "test": "jest",
+    "migrate": "node ./bin/migrate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "pm2": "^5.4.2",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
